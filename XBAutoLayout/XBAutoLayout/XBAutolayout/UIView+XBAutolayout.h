@@ -20,18 +20,18 @@
 - (instancetype)xb_centerXSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 - (instancetype)xb_centerYSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 
-- (instancetype)xb_leftEqualToView:(UIView *)view;
-- (instancetype)xb_rightEqualToView:(UIView *)view;
-- (instancetype)xb_topEqualToView:(UIView *)view;
-- (instancetype)xb_bottomEqualToView:(UIView *)view;
-- (instancetype)xb_centerEqualToView:(UIView *)view;
-- (instancetype)xb_centerXEqualToView:(UIView *)view;
-- (instancetype)xb_centerYEqualToView:(UIView *)view;
-- (instancetype)xb_sizeEqualToView:(UIView *)view;
-- (instancetype)xb_edgeEqualToView:(UIView *)view;
+- (instancetype)xb_leftEqualtoView:(UIView *)view;
+- (instancetype)xb_rightEqualtoView:(UIView *)view;
+- (instancetype)xb_topEqualtoView:(UIView *)view;
+- (instancetype)xb_bottomEqualtoView:(UIView *)view;
+- (instancetype)xb_centerEqualtoView:(UIView *)view;
+- (instancetype)xb_centerXEqualtoView:(UIView *)view;
+- (instancetype)xb_centerYEqualtoView:(UIView *)view;
+- (instancetype)xb_sizeEqualtoView:(UIView *)view;
+- (instancetype)xb_edgeEqualtoView:(UIView *)view;
 
-- (instancetype)xb_widthEqualToView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant;
-- (instancetype)xb_heightEqualToView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant;
+- (instancetype)xb_widthEqualtoView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant;
+- (instancetype)xb_heightEqualtoView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant;
 
 - (instancetype)xb_leftIs:(CGFloat)value;
 - (instancetype)xb_rightIs:(CGFloat)value;

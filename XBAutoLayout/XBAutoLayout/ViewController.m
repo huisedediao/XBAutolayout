@@ -43,21 +43,21 @@
     greenView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:greenView];
     
-//    [greenView xb_leftSpace:10 ToView:redView side:XBSideLeft];
-//    [greenView xb_topSpace:20 ToView:redView side:XBSideBottom];
-//    [greenView xb_rightSpace:70 ToView:redView side:XBSideLeft];
+//    [greenView xb_leftSpace:10 toView:redView side:XBSideLeft];
+//    [greenView xb_topSpace:20 toView:redView side:XBSideBottom];
+//    [greenView xb_rightSpace:70 toView:redView side:XBSideLeft];
 //    [greenView xb_heightIs:60];
 //    [greenView xb_topIs:170];
 //    [greenView xb_leftIs:20];
 //    [greenView xb_rightIs:110];
 //    [greenView xb_bottomIs:260];
     
-//    [greenView xb_leftEqualToView:redView];
-//    [greenView xb_rightEqualToView:redView];
-//    [greenView xb_topEqualToView:redView];
-//    [greenView xb_bottomEqualToView:redView];
+//    [greenView xb_leftEqualtoView:redView];
+//    [greenView xb_rightEqualtoView:redView];
+//    [greenView xb_topEqualtoView:redView];
+//    [greenView xb_bottomEqualtoView:redView];
     
-//    [greenView xb_centerEqualToView:redView];
+//    [greenView xb_centerEqualtoView:redView];
 //    [greenView xb_heightIs:30];
 //    [greenView xb_widthIs:30];
     
@@ -70,9 +70,9 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [UIView animateWithDuration:0.5 animations:^{
-//        [greenView xb_centerEqualToView:self.view];
+//        [greenView xb_centerEqualtoView:self.view];
 //        [greenView xb_sizeIs:CGSizeMake(200, 200)];
-        [greenView xb_edgeEqualToView:self.view];
+        [greenView xb_edgeEqualtoView:self.view];
         [self.view layoutIfNeeded];
     }];
 }

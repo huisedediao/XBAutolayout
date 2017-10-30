@@ -112,57 +112,57 @@
     return self;
 }
 
-- (instancetype)xb_leftEqualToView:(UIView *)view
+- (instancetype)xb_leftEqualtoView:(UIView *)view
 {
     [self xb_leftSpace:0 toView:view attribute:NSLayoutAttributeLeft];
     return self;
 }
-- (instancetype)xb_rightEqualToView:(UIView *)view
+- (instancetype)xb_rightEqualtoView:(UIView *)view
 {
     [self xb_rightSpace:0 toView:view attribute:NSLayoutAttributeRight];
     return self;
 }
-- (instancetype)xb_topEqualToView:(UIView *)view
+- (instancetype)xb_topEqualtoView:(UIView *)view
 {
     [self xb_topSpace:0 toView:view attribute:NSLayoutAttributeTop];
     return self;
 }
-- (instancetype)xb_bottomEqualToView:(UIView *)view
+- (instancetype)xb_bottomEqualtoView:(UIView *)view
 {
     [self xb_bottomSpace:0 toView:view attribute:NSLayoutAttributeBottom];
     return self;
 }
-- (instancetype)xb_centerEqualToView:(UIView *)view
+- (instancetype)xb_centerEqualtoView:(UIView *)view
 {
-    [self xb_centerXEqualToView:view];
-    [self xb_centerYEqualToView:view];
+    [self xb_centerXEqualtoView:view];
+    [self xb_centerYEqualtoView:view];
     return self;
 }
-- (instancetype)xb_centerXEqualToView:(UIView *)view
+- (instancetype)xb_centerXEqualtoView:(UIView *)view
 {
     [self xb_centerXSpace:0 toView:view attribute:NSLayoutAttributeCenterX];
     return self;
 }
-- (instancetype)xb_centerYEqualToView:(UIView *)view
+- (instancetype)xb_centerYEqualtoView:(UIView *)view
 {
     [self xb_centerYSpace:0 toView:view attribute:NSLayoutAttributeCenterY];
     return self;
 }
-- (instancetype)xb_sizeEqualToView:(UIView *)view
+- (instancetype)xb_sizeEqualtoView:(UIView *)view
 {
-    [self xb_widthEqualToView:view multiple:1 constant:0];
-    [self xb_heightEqualToView:view multiple:1 constant:0];
+    [self xb_widthEqualtoView:view multiple:1 constant:0];
+    [self xb_heightEqualtoView:view multiple:1 constant:0];
     return self;
 }
-- (instancetype)xb_edgeEqualToView:(UIView *)view
+- (instancetype)xb_edgeEqualtoView:(UIView *)view
 {
     [self xb_clearAllConstraints];
-    [self xb_centerEqualToView:view];
-    [self xb_sizeEqualToView:view];
+    [self xb_centerEqualtoView:view];
+    [self xb_sizeEqualtoView:view];
     return self;
 }
 
-- (instancetype)xb_widthEqualToView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant
+- (instancetype)xb_widthEqualtoView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_width];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeWidth multiplier:multiple constant:constant];
@@ -170,7 +170,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_width owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_heightEqualToView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant
+- (instancetype)xb_heightEqualtoView:(UIView *)view multiple:(CGFloat)multiple constant:(CGFloat)constant
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_height];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeHeight multiplier:multiple constant:constant];
