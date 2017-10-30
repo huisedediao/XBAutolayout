@@ -95,7 +95,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_bottom owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_centerXSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute
+- (instancetype)xb_centerXSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_centerX];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
@@ -103,7 +103,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_centerX owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_centerYSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute
+- (instancetype)xb_centerYSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_centerY];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
