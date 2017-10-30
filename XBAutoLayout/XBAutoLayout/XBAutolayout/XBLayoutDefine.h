@@ -36,20 +36,4 @@ typedef enum
 #define K_Layout_key_constraint        @"K_Layout_key_constraint"
 
 
-//判断某个view是否是另一个view的子view (BOOL)
-#define isSubViewOfView_subV_fatherV(subV,fatherV)\
-({\
-BOOL isSubView=NO;\
-NSArray *subViews=fatherV.subviews;\
-for (UIView *subView in subViews)\
-{\
-if (subView==subV)\
-{\
-isSubView=YES;\
-break;\
-}\
-}\
-isSubView;\
-})
-
 #endif /* XBLayoutDefine_h */

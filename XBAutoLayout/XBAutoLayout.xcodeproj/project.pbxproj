@@ -16,7 +16,6 @@
 		F1AB98891FA6C2CC00F2FABD /* XBAutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AB98881FA6C2CC00F2FABD /* XBAutoLayoutTests.m */; };
 		F1AB98941FA6C2CC00F2FABD /* XBAutoLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AB98931FA6C2CC00F2FABD /* XBAutoLayoutUITests.m */; };
 		F1AB98A51FA6C72E00F2FABD /* UIView+XBAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AB98A41FA6C72E00F2FABD /* UIView+XBAutolayout.m */; };
-		F1AB98AA1FA71EED00F2FABD /* UIView+FrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AB98A91FA71EED00F2FABD /* UIView+FrameLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +56,6 @@
 		F1AB98A31FA6C72E00F2FABD /* UIView+XBAutolayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XBAutolayout.h"; sourceTree = "<group>"; };
 		F1AB98A41FA6C72E00F2FABD /* UIView+XBAutolayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XBAutolayout.m"; sourceTree = "<group>"; };
 		F1AB98A71FA6FB1800F2FABD /* XBLayoutDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBLayoutDefine.h; sourceTree = "<group>"; };
-		F1AB98A81FA71EED00F2FABD /* UIView+FrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameLayout.h"; sourceTree = "<group>"; };
-		F1AB98A91FA71EED00F2FABD /* UIView+FrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +149,6 @@
 		F1AB98A11FA6C6A700F2FABD /* XBAutolayout */ = {
 			isa = PBXGroup;
 			children = (
-				F1AB98A81FA71EED00F2FABD /* UIView+FrameLayout.h */,
-				F1AB98A91FA71EED00F2FABD /* UIView+FrameLayout.m */,
 				F1AB98A21FA6C6CC00F2FABD /* XBAutolayout.h */,
 				F1AB98A31FA6C72E00F2FABD /* UIView+XBAutolayout.h */,
 				F1AB98A41FA6C72E00F2FABD /* UIView+XBAutolayout.m */,
@@ -298,7 +293,6 @@
 			files = (
 				F1AB98761FA6C2CC00F2FABD /* ViewController.m in Sources */,
 				F1AB98A51FA6C72E00F2FABD /* UIView+XBAutolayout.m in Sources */,
-				F1AB98AA1FA71EED00F2FABD /* UIView+FrameLayout.m in Sources */,
 				F1AB98731FA6C2CC00F2FABD /* AppDelegate.m in Sources */,
 				F1AB98701FA6C2CC00F2FABD /* main.m in Sources */,
 			);

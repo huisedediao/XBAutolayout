@@ -61,7 +61,8 @@
 //    [greenView xb_heightIs:30];
 //    [greenView xb_widthIs:30];
     
-    [greenView xb_centerXEqualToView:baseView];
+//    [greenView xb_centerXEqualToView:self.view];
+    [greenView xb_centerXSpace:100 ToView:redView attribute:NSLayoutAttributeCenterX];
     [greenView xb_centerYSpace:100 ToView:redView attribute:NSLayoutAttributeBottom];
     [greenView xb_sizeEqualToView:redView];
     [greenView xb_sizeIs:CGSizeMake(100, 100)];
@@ -69,6 +70,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [UIView animateWithDuration:0.5 animations:^{
+        [greenView xb_centerEqualToView:self.view];
         [greenView xb_sizeIs:CGSizeMake(200, 200)];
         [self.view layoutIfNeeded];
     }];
