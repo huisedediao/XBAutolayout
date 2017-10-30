@@ -11,6 +11,8 @@
 
 @interface UIView (XBAutolayout)
 
+- (instancetype)xb_clearAllConstraints;
+
 - (instancetype)xb_leftSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 - (instancetype)xb_rightSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 - (instancetype)xb_topSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;

@@ -70,8 +70,9 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [UIView animateWithDuration:0.5 animations:^{
-        [greenView xb_centerEqualToView:self.view];
-        [greenView xb_sizeIs:CGSizeMake(200, 200)];
+//        [greenView xb_centerEqualToView:self.view];
+//        [greenView xb_sizeIs:CGSizeMake(200, 200)];
+        [greenView xb_edgeEqualToView:self.view];
         [self.view layoutIfNeeded];
     }];
 }

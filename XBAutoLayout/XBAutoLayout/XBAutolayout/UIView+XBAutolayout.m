@@ -15,6 +15,16 @@
 
 @implementation UIView (XBAutolayout)
 
+- (instancetype)xb_clearAllConstraints
+{
+    [self.dicM_constraints enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        NSDictionary *dic = (NSDictionary *)obj;
+        [self removeConstraintWithDic:dic];
+    }];
+    [self.dicM_constraints removeAllObjects];
+    return self;
+}
+
 - (void)setDicM_constraints:(NSMutableDictionary *)dicM_constraints
 {
     self.translatesAutoresizingMaskIntoConstraints = NO;
@@ -37,11 +47,15 @@
     NSDictionary *dic = self.dicM_constraints[key];
     if (dic)
     {
-        NSLayoutConstraint *constraint = dic[K_Layout_key_constraint];
-        UIView *owner = dic[K_Layout_key_owner];
-        [owner removeConstraint:constraint];
+        [self removeConstraintWithDic:dic];
         [self.dicM_constraints removeObjectForKey:key];
     }
+}
+- (void)removeConstraintWithDic:(NSDictionary *)dic
+{
+    NSLayoutConstraint *constraint = dic[K_Layout_key_constraint];
+    UIView *owner = dic[K_Layout_key_owner];
+    [owner removeConstraint:constraint];
 }
 - (void)storeLayoutConstraintWithKey:(NSString *)key owner:(UIView *)owner constraint:(NSLayoutConstraint *)constraint
 {
@@ -142,6 +156,7 @@
 }
 - (instancetype)xb_edgeEqualToView:(UIView *)view
 {
+    [self xb_clearAllConstraints];
     [self xb_centerEqualToView:view];
     [self xb_sizeEqualToView:view];
     return self;
