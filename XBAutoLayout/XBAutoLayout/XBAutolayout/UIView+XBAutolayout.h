@@ -41,5 +41,6 @@
 - (instancetype)xb_heightIs:(CGFloat)value;
 - (instancetype)xb_sizeIs:(CGSize)size;
 
+///注意：如果用这个方法设置的约束，更新约束时要手动调用xb_clearAllConstraints清除约束
 - (instancetype)xb_selfAttribute:(NSLayoutAttribute)selfAttribute relatedBy:(NSLayoutRelation)relation toView:(UIView *)view attribute:(NSLayoutAttribute)attribute multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
 @end
