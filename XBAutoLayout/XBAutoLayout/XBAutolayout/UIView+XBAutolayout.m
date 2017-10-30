@@ -71,6 +71,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_left owner:self.superview constraint:constraint];
     return self;
 }
+
 - (instancetype)xb_rightSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_right];
@@ -219,6 +220,13 @@
 {
     [self xb_widthIs:size.width];
     [self xb_heightIs:size.height];
+    return self;
+}
+
+- (instancetype)xb_selfAttribute:(NSLayoutAttribute)selfAttribute relatedBy:(NSLayoutRelation)relation toView:(UIView *)view attribute:(NSLayoutAttribute)attribute multiplier:(CGFloat)multiplier constant:(CGFloat)constant
+{
+    NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:selfAttribute relatedBy:relation toItem:view attribute:attribute multiplier:multiplier constant:constant];
+    [self.superview addConstraint:constraint];
     return self;
 }
 @end

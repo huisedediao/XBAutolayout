@@ -41,4 +41,5 @@
 - (instancetype)xb_heightIs:(CGFloat)value;
 - (instancetype)xb_sizeIs:(CGSize)size;
 
+- (instancetype)xb_selfAttribute:(NSLayoutAttribute)selfAttribute relatedBy:(NSLayoutRelation)relation toView:(UIView *)view attribute:(NSLayoutAttribute)attribute multiplier:(CGFloat)multiplier constant:(CGFloat)constant;
 @end

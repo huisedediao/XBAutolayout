@@ -65,6 +65,7 @@
     [greenView xb_centerXSpace:100 toView:redView attribute:NSLayoutAttributeCenterX];
     [greenView xb_centerYSpace:100 toView:redView attribute:NSLayoutAttributeBottom];
     [greenView xb_sizeEqualToView:redView];
+    [greenView xb_selfAttribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationGreaterThanOrEqual toView:nil attribute:kNilOptions multiplier:1.0f constant:150];
     [greenView xb_sizeIs:CGSizeMake(100, 100)];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
