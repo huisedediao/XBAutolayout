@@ -33,8 +33,8 @@
     redView.backgroundColor = [UIColor redColor];
     [self.view addSubview:redView];
     
-    [redView xb_leftSpace:20 ToView:self.view attribute:NSLayoutAttributeLeft];
-    [redView xb_topSpace:70 ToView:self.view attribute:NSLayoutAttributeTop];
+    [redView xb_leftSpace:20 toView:self.view attribute:NSLayoutAttributeLeft];
+    [redView xb_topSpace:70 toView:self.view attribute:NSLayoutAttributeTop];
     [redView xb_widthIs:50];
     [redView xb_heightIs:50];
     
@@ -62,8 +62,8 @@
 //    [greenView xb_widthIs:30];
     
 //    [greenView xb_centerXEqualToView:self.view];
-    [greenView xb_centerXSpace:100 ToView:redView attribute:NSLayoutAttributeCenterX];
-    [greenView xb_centerYSpace:100 ToView:redView attribute:NSLayoutAttributeBottom];
+    [greenView xb_centerXSpace:100 toView:redView attribute:NSLayoutAttributeCenterX];
+    [greenView xb_centerYSpace:100 toView:redView attribute:NSLayoutAttributeBottom];
     [greenView xb_sizeEqualToView:redView];
     [greenView xb_sizeIs:CGSizeMake(100, 100)];
 }

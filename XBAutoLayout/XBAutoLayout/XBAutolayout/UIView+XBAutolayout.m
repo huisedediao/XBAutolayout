@@ -63,7 +63,7 @@
     self.dicM_constraints[key] = dic;
 }
 
-- (instancetype)xb_leftSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_leftSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_left];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
@@ -71,7 +71,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_left owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_rightSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_rightSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_right];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
@@ -79,7 +79,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_right owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_topSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_topSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_top];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
@@ -87,7 +87,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_top owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_bottomSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_bottomSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_bottom];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
@@ -95,7 +95,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_bottom owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_centerXSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute
+- (instancetype)xb_centerXSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_centerX];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
@@ -103,7 +103,7 @@
     [self storeLayoutConstraintWithKey:K_Layout_key_centerX owner:self.superview constraint:constraint];
     return self;
 }
-- (instancetype)xb_centerYSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute
+- (instancetype)xb_centerYSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute
 {
     [self removeLayoutConstraintWithKey:K_Layout_key_centerY];
     NSLayoutConstraint * constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1.0f constant:space];
@@ -114,22 +114,22 @@
 
 - (instancetype)xb_leftEqualToView:(UIView *)view
 {
-    [self xb_leftSpace:0 ToView:view attribute:NSLayoutAttributeLeft];
+    [self xb_leftSpace:0 toView:view attribute:NSLayoutAttributeLeft];
     return self;
 }
 - (instancetype)xb_rightEqualToView:(UIView *)view
 {
-    [self xb_rightSpace:0 ToView:view attribute:NSLayoutAttributeRight];
+    [self xb_rightSpace:0 toView:view attribute:NSLayoutAttributeRight];
     return self;
 }
 - (instancetype)xb_topEqualToView:(UIView *)view
 {
-    [self xb_topSpace:0 ToView:view attribute:NSLayoutAttributeTop];
+    [self xb_topSpace:0 toView:view attribute:NSLayoutAttributeTop];
     return self;
 }
 - (instancetype)xb_bottomEqualToView:(UIView *)view
 {
-    [self xb_bottomSpace:0 ToView:view attribute:NSLayoutAttributeBottom];
+    [self xb_bottomSpace:0 toView:view attribute:NSLayoutAttributeBottom];
     return self;
 }
 - (instancetype)xb_centerEqualToView:(UIView *)view
@@ -140,12 +140,12 @@
 }
 - (instancetype)xb_centerXEqualToView:(UIView *)view
 {
-    [self xb_centerXSpace:0 ToView:view attribute:NSLayoutAttributeCenterX];
+    [self xb_centerXSpace:0 toView:view attribute:NSLayoutAttributeCenterX];
     return self;
 }
 - (instancetype)xb_centerYEqualToView:(UIView *)view
 {
-    [self xb_centerYSpace:0 ToView:view attribute:NSLayoutAttributeCenterY];
+    [self xb_centerYSpace:0 toView:view attribute:NSLayoutAttributeCenterY];
     return self;
 }
 - (instancetype)xb_sizeEqualToView:(UIView *)view
@@ -181,22 +181,22 @@
 
 - (instancetype)xb_leftIs:(CGFloat)value
 {
-    [self xb_leftSpace:value ToView:self.superview attribute:NSLayoutAttributeLeft];
+    [self xb_leftSpace:value toView:self.superview attribute:NSLayoutAttributeLeft];
     return self;
 }
 - (instancetype)xb_rightIs:(CGFloat)value
 {
-    [self xb_rightSpace:value ToView:self.superview attribute:NSLayoutAttributeLeft];
+    [self xb_rightSpace:value toView:self.superview attribute:NSLayoutAttributeLeft];
     return self;
 }
 - (instancetype)xb_topIs:(CGFloat)value
 {
-    [self xb_topSpace:value ToView:self.superview attribute:NSLayoutAttributeTop];
+    [self xb_topSpace:value toView:self.superview attribute:NSLayoutAttributeTop];
     return self;
 }
 - (instancetype)xb_bottomIs:(CGFloat)value
 {
-    [self xb_bottomSpace:value ToView:self.superview attribute:NSLayoutAttributeTop];
+    [self xb_bottomSpace:value toView:self.superview attribute:NSLayoutAttributeTop];
     return self;
 }
 - (instancetype)xb_widthIs:(CGFloat)value

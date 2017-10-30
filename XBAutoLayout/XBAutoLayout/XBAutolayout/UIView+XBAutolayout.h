@@ -13,12 +13,12 @@
 
 - (instancetype)xb_clearAllConstraints;
 
-- (instancetype)xb_leftSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
-- (instancetype)xb_rightSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
-- (instancetype)xb_topSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
-- (instancetype)xb_bottomSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
-- (instancetype)xb_centerXSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
-- (instancetype)xb_centerYSpace:(CGFloat)space ToView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_leftSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_rightSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_topSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_bottomSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_centerXSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
+- (instancetype)xb_centerYSpace:(CGFloat)space toView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
 
 - (instancetype)xb_leftEqualToView:(UIView *)view;
 - (instancetype)xb_rightEqualToView:(UIView *)view;
