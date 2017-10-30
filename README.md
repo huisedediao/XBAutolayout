@@ -1,0 +1,2 @@
+# XBAutolayout
+NSLayoutConstraint 的简单封装，自己做封装的时候不想依赖第三方autoLayout库
